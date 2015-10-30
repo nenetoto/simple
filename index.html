@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<div class="ui cards">
+  {% for post in site.posts %}
+  <div class="card">
+    <div class="content">
+      <a class="header" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <div class="meta">{{ post.date | date: "%Y-%m-%d" }}</div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

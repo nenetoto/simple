@@ -1,0 +1,9 @@
+# Site settings
+logo:   /logo.png
+title:  Nurijoy Developers
+
+# Build settings
+markdown:     kramdown
+# highlighter:  pygments
+host:         0.0.0.0
+timezone:     Asia/Seoul

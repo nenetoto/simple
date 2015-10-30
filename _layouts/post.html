@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<article class="ui  fluid card">
+  <div class="content">
+    {% for tag in page.tags %}
+    <div class="ui right floated tag labels">
+      <div class="ui label">{{ tag }}</div>
+    </div>
+    {% endfor %}
+    <div class="header">{{ page.title }}</div>
+    <div class="meta">{{ page.date }}</div>
+    <div class="description">{{ content }}</div>
+  </div>
+  {% if page.author %}
+  <div class="extra content">
+    <div class="right floated author">
+      <i class="user icon"></i>{{ page.author }}
+    </div>
+  </div>
+  {% endif %}
+</article>
