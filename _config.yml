@@ -7,3 +7,6 @@ markdown:     kramdown
 # highlighter:  pygments
 host:         0.0.0.0
 timezone:     Asia/Seoul
+
+kramdown:
+  input: GFM
